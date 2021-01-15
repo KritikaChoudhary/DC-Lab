@@ -13,8 +13,8 @@ void main(int argc, char **argv)
 
     MPI_Comm_group(MPI_COMM_WORLD, &groupId);
 
-    int evenPSize = size / 2;
-    int oddPSize = (size + 1) / 2;
+    int oddPSize = size / 2;
+    int evenPSize = (size + 1) / 2;
     int evenRanks[evenPSize], oddRanks[oddPSize];
 
     int j = 0;
