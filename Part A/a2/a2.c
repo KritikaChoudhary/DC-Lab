@@ -36,8 +36,8 @@ int main()
                                                                         //declaring i private ensures that each thread will work
                                                                         //on a separate position of result.
     {
-        #pragma omp for shared(static)   //omp for distributes each for loop iteration among different threads.
-                                        //shared(static) : divides loops among threads as - no. of iteration/no. of threads
+        #pragma omp for scheduled(static)   //omp for distributes each for loop iteration among different threads.
+                                        //scheduled(static) : divides loops among threads as - no. of iteration/no. of threads
         {
             for(i = 0; i < m; i++)
             {
