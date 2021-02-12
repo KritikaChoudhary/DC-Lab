@@ -1,12 +1,12 @@
 # DC-Lab
 SEM VII
 
-OpenMp programs
-To run:
--gcc -fopenmp prgram_name.c
--./a.out
+OpenMp programs<br>
+To run:<br>
+gcc -fopenmp prgram_name.c<br>
+./a.out<br><br>
 
-MPI programs
-To run:
--mpicc program_name.c
--mpiexec -np no_of_processes ./a.out
+MPI programs<br>
+To run:<br>
+mpicc program_name.c<br>
+mpiexec -np no_of_processes ./a.out
